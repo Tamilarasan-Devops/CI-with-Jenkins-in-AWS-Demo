@@ -30,7 +30,7 @@ pipeline {
 	   stage('Build Docker Image') { 
 		steps {
                    script {
-		      myimage = docker.build("gcr.io/tamilarasanece1989/devops1:${env.BUILD_ID}")
+		      myimage = docker.build("gcr.io/protean-booth-260117/tamilarasanece1989/devops1:${env.BUILD_ID}")
                    }
                 }
 	   }
