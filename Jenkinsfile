@@ -5,7 +5,7 @@ pipeline {
 		PROJECT_ID = 'protean-booth-260117'
                 CLUSTER_NAME = 'kubernetes-cluster'
                 LOCATION = 'europe-west2-b'
-                CREDENTIALS_ID = 'gcrkey'
+                CREDENTIALS_ID = 'K8'
 	}
 	
     stages {	
