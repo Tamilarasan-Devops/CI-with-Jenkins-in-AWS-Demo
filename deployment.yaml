@@ -17,7 +17,7 @@ spec:
   spec:
    containers:
    - name: myapp2
-     image: "gcr.io/tamilarasanece1989/devops1:tagversion"
+     image: "gcr.io/protean-booth-260117/tamilarasanece1989/devops1:tagversion"
      ports:
      - containerPort: 8080
 
