@@ -2,10 +2,10 @@ pipeline {
     agent any 	
 	environment {
 		
-		PROJECT_ID = 'sri-super-league-b10'
-                CLUSTER_NAME = 'k8s-cluster-gcs'
-                LOCATION = 'us-central1-c'
-                CREDENTIALS_ID = 'sri-super-league-b10'
+		PROJECT_ID = 'protean-booth-260117'
+                CLUSTER_NAME = 'kubernetes-cluster'
+                LOCATION = 'europe-west2-b'
+                CREDENTIALS_ID = 'K8'
 	}
 	
     stages {	
@@ -30,7 +30,7 @@ pipeline {
 	   stage('Build Docker Image') { 
 		steps {
                    script {
-		      myimage = docker.build("sritharan/devops:${env.BUILD_ID}")
+		      myimage = docker.build("tamilarasanece1989/devops:${env.BUILD_ID}")
                    }
                 }
 	   }
